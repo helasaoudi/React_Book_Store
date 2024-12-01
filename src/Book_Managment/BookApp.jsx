@@ -17,7 +17,7 @@ export default function BookApp() {
     const [books, setBooks] = useState(initList);
     const [showAddModal, setShowAddModal] = useState(false);
     const [showEditModal, setShowEditModal] = useState(false);
-    const [currentBook, setCurrentBook] = useState(null); // Pour gérer le livre en cours d'édition
+    const [currentBook, setCurrentBook] = useState(null); 
 
     const handleDelete = (id) => {
         const updatedBooks = books.filter(book => book.id !== id);
